@@ -28,6 +28,9 @@ section .content {
 #schedule {
     background-color: #EA5160;
 }
+#reesources {
+    background-color: #FAC25A;
+}
 /* ----- top
  -------- */
     #top nav {
@@ -122,4 +125,11 @@ section .content {
         margin: auto;
         max-width: 500px;
     }
-    
+
+/* ----- reesources
+    -------- */
+    #reesources .content .panel {
+        margin: 20px auto;
+        width: 70%;
+        color: #302F27;
+    }
