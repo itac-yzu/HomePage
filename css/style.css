@@ -235,16 +235,15 @@ section .container .container {
   }
 }
 #recruit h1, #recruit h3 {
-  margin-top: 50px;
+  margin-top: 10%;
   margin-bottom: 50px;
 }
 
 .timeline {
   list-style: none;
-  padding: 20px 0 20px;
+  padding: 20px 0;
   position: relative;
 }
-
 .timeline:before {
   top: 0;
   bottom: 0;
@@ -255,43 +254,29 @@ section .container .container {
   left: 50%;
   margin-left: -1.5px;
 }
-
 .timeline > li {
   margin-bottom: 20px;
   position: relative;
 }
-
-.timeline > li:before,
-.timeline > li:after {
+.timeline > li:before {
   content: " ";
   display: table;
 }
-
-.timeline > li:after {
-  clear: both;
-}
-
-.timeline > li:before,
 .timeline > li:after {
   content: " ";
   display: table;
-}
-
-.timeline > li:after {
   clear: both;
 }
-
 .timeline > li > .timeline-panel {
-  width: 46%;
-  float: left;
+  float: right;
+  right: 55%;
   border: 1px solid #d4d4d4;
   border-radius: 2px;
   padding: 20px;
   position: relative;
-  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  text-align: right;
 }
-
 .timeline > li > .timeline-panel:before {
   position: absolute;
   top: 26px;
@@ -303,7 +288,6 @@ section .container .container {
   border-bottom: 15px solid transparent;
   content: " ";
 }
-
 .timeline > li > .timeline-panel:after {
   position: absolute;
   top: 27px;
@@ -315,7 +299,6 @@ section .container .container {
   border-bottom: 14px solid transparent;
   content: " ";
 }
-
 .timeline > li > .timeline-badge {
   color: #fff;
   width: 50px;
@@ -334,18 +317,18 @@ section .container .container {
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
 }
-
 .timeline > li.timeline-inverted > .timeline-panel {
-  float: right;
+  float: left;
+  right: initial;
+  left: 55%;
+  text-align: initial;
 }
-
 .timeline > li.timeline-inverted > .timeline-panel:before {
   border-left-width: 0;
   border-right-width: 15px;
   left: -15px;
   right: auto;
 }
-
 .timeline > li.timeline-inverted > .timeline-panel:after {
   border-left-width: 0;
   border-right-width: 14px;
@@ -356,19 +339,15 @@ section .container .container {
 .timeline-badge.primary {
   background-color: #2e6da4 !important;
 }
-
 .timeline-badge.success {
   background-color: #3f903f !important;
 }
-
 .timeline-badge.warning {
   background-color: #f0ad4e !important;
 }
-
 .timeline-badge.danger {
   background-color: #d9534f !important;
 }
-
 .timeline-badge.info {
   background-color: #5bc0de !important;
 }
@@ -378,11 +357,16 @@ section .container .container {
   color: inherit;
 }
 
-.timeline-body > p,
+.timeline-body > p {
+  margin-bottom: 0;
+}
+.timeline-body > p + p {
+  margin-top: 5px;
+}
 .timeline-body > ul {
   margin-bottom: 0;
 }
 
-.timeline-body > p + p {
-  margin-top: 5px;
+.timeline-body {
+  text-align: left;
 }
