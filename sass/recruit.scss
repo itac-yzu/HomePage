@@ -1,0 +1,31 @@
+#recruit
+{
+	color: hsla(0, 0%, 100%, .9);
+	margin: auto;
+	text-align: center;	
+	@media screen and (max-width : 1200px)
+	{
+		min-height: initial;
+		max-height: 600px  !important;
+	}
+
+	
+	background:
+	{
+		image:url('../img/banner.png');
+		size:100%;
+	}
+
+	h1, h3
+	{
+		margin:
+		{
+			top: 50px ;
+			bottom: 50px;
+		}	
+	}
+}
+	
+
+
+	

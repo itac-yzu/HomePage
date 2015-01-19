@@ -11,8 +11,13 @@
 
     <!-- Resource JavaScript -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="//use.edgefonts.net/allan.js"></script>
+    <script src="//use.edgefonts.net/overlock-sc.js"></script>
     <script src='js/scrollIt.min.js' type='text/javascript'></script>
+    <script>
+    $(function() {
+        $.scrollIt();
+    });
+    </script>
 </head>
 
 <body>
@@ -20,27 +25,141 @@
         <div id="logo">
             <img src="img/icon.png" class="img-responsive img-circle">
             <div class="logo-text">
-                <p>
-                    <h1>ITAC</h1>
-                    <br>Information Technology Association Club
-                </p>
+
+                <h1>ITAC</h1>
+                <p>Information Technology Association Club</p>
             </div>
         </div>
         <ul>
             <li data-scroll-nav="0"><a data-scroll-nav="0" href="#">Top</a>
             </li>
-            <li data-scroll-nav="1"><a data-scroll-nav="1" href="#">About</a>
+            <li data-scroll-nav="1"><a data-scroll-nav="1" href="#">Schedule</a>
             </li>
-            <li data-scroll-nav="2"><a data-scroll-nav="2" href="#">Member</a>
+            <li data-scroll-nav="2"><a data-scroll-nav="2" href="#">Join us</a>
             </li>
-            <li data-scroll-nav="3"><a data-scroll-nav="3" href="#">Q &amp; A</a>
+            <li data-scroll-nav="3"><a data-scroll-nav="3" href="#">About</a>
             </li>
         </ul>
     </nav>
-    <div class="container">
 
+    <div class="main">
+        <section id="recruit" data-scroll-index="0">
+            <div class="container">
+                <h1>ITAC 社員招募</h1>
+                <h3>對於程式設計或資訊安全有相當的熱誠嗎? 快加入我們</h3>
+                <div class="re-btn">
+                    <a href="" class="btn btn-success btn-lg" data-scroll-nav="1">了解更多</a>
+                    <a href="http://itac.kktix.cc/events/itac-recruit" target="_blank" class="btn btn-success btn-lg">即刻報名</a>
+                </div>
+            </div>
+        </section>
 
-        <section>
+        <section id="schedule">
+            <div class="container">
+                <div class="page-headr">
+                    <h1>Schedule <small>日程表</small></h1>
+                </div>
+                <hr>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">即日起</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>開放報名</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">2/17</h4>
+                            </div>
+                            <div class="timeline-body">
+                                報名截止
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">2/26</h4>
+                            </div>
+                            <div class="timeline-body">
+                                面試
+                            </div>
+                        </div>
+                    </li>
+                
+                    
+                    <li class="timeline-inverted">
+                        <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">2/27</h4>
+                            </div>
+                            <div class="timeline-body">
+                               公佈錄取名單
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">3/3</h4>
+                            </div>
+                            <div class="timeline-body">
+                                社團期初聚
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="re-btn" style="text-align: center;">
+                    <a href="http://itac.kktix.cc/events/itac-recruit" target="_blank" class="btn btn-success btn-lg">立即報名</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="join" data-scroll-index="2">
+            <div class="container">
+                <div class="page-headr">
+                    <h1>Join us <small>加入我們</small></h1>
+                </div>
+                <hr>
+                <div class="container">
+                    <p>我們在上學期開設了「HTML + CSS 前端網頁設計」、「GIT版本控制新手村 + 正規表達式入門」、「JavaScript」、「那些學校沒教的黑魔法攻防——資訊安全」、「PHP + MySQL 網頁後端開發」等基礎課程，培養學員的程式基礎。學程式是一條辛苦漫長的路，我們仍看見有一批學員默默耕耘，願意付出心力及時間力求進步。</p>
+                    <p>在下學期開始，我們打算做出重大的改變。首先我們將正式成立社團、招收社員，我們不再開設給所有人上社課，將集中培訓社員。在上課方式的方面，也不再著重於一味聽講。而是將社員分成幾個小組，各自開發有興趣的project，各領域的講師們將會在一旁給予技術協助，帶領大家由實作當中進行學習，累積實戰經驗。上課空間也不再是冷冰冰有距離感的電腦教室，屆時會請各位學員帶著筆電和組員聚在一起，面對面討論、一起coding，增加討論及交流空間，營造像是Hackthon的氛圍。</p>
+                    <p>在期末，將會有一場發表會，由各組上場DEMO自己組別所完成的project，若是作品優異，也可以拿出去比賽。在學期中，會固定設立交流會時間，由開發過程中有心得或新技術的組員做出分享，一方面訓練大家當講者的能力，一方面在分享及教學的過程，其實對自身也是另一種層次的進步。在一些比較重要的基礎能力上，也會統一再加強訓練社員，例如「專案管理」、「Python」等等。</p>
+                    <p>當然，在學期中也會舉辦社遊等等，增進學員間的感情。由於學員們的課表不一，將在之後重新調整社課時間。想要尋找程式路上的夥伴嗎？想在高手雲集的地方和大家一起切磋技術、交流進步嗎？想跨出你遲遲不敢跨出的第一步嗎？想和大家一起打怪練功嗎？無論你是新手、老手，想要專攻什麼樣的領域，歡迎正式加入ITAC，給自己一個機會，一起學習「學校不教的事」，讓自己擁有更多能力去改變自己、改變世界。</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="about" data-scroll-index="3">
+            <div class="container">
+                <div class="page-headr">
+                    <h1>About <small>關於我們</small></h1>
+                </div>
+                <hr>
+                <div class="container">
+                    <p>ITAC創立的初衷——「有些事現在不做，一輩子都不會做了」。2014年的暑假尾聲，正當其他同學們在各地玩得不亦樂乎時，一群熱愛資訊的元智人默默開始聚集，秉持著「為什麼元智沒有資訊社？」、「那就創一個吧？」的想法，創立了元智第一個資訊性社團─ITAC。ITAC全名為Information Technology Association Club，是由一群熱愛程式的元智學生創立的社團。</p>
+                    <p>ITAC現階段的成員橫跨大一到大四，成員擅長領域包括Android、iOS App開發、HTML、CSS、JavaScript、PHP網站設計，MySQL資料庫管理，Python，資訊安全等等，更有多位成員早已在業界工作或是代表學校參加比賽，成員們也期望未來能夠分享給喜歡資訊的同學們。</p>
+                    <p>如果對於寫程式只為應付作業的生活感到厭倦，或是想嘗試課外之餘接案賺取零用的同學，給自己一個機會，一起學習「學校不教的事」，讓自己擁有更多能力去改變自己、改變世界。</p>
+                </div>
+            </div>
 
         </section>
     </div>

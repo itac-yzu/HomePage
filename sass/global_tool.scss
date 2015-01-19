@@ -1,0 +1,91 @@
+html, body
+{
+	font-family: overlock-sc, sans-serif;
+	font-size: 15px;
+	height: 100%;
+	margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.main
+{
+	height: 100% ;
+	padding-top: 120px ;
+	@media screen and (min-width : $device-screen-iphone4)
+	{
+		padding:
+		{
+			top: 140px;
+		}
+	}
+		
+			
+	@media screen and (min-width : $device-screen-small)
+	{
+		padding:
+		{
+			top: 160px;
+		}
+	}
+
+	@media screen and (min-width : $device-screen-medium)
+	{
+		padding: 
+		{
+			top: 200px;
+		}
+	}
+		
+
+	@media screen and (min-width : $device-screen-large)
+	{
+		padding:
+		{
+			top: 200px;
+		}	
+	}
+}
+
+.container
+{
+	padding:
+	{
+		top:50px;
+		bottom: 50px ;
+	}
+	p
+	{
+		text-indent: 50px;
+		line-height: 40px; 
+	}
+}
+	
+
+section	
+{
+	min-height: 100%;
+	width: 100%;
+	
+	.container .container
+	{
+		width: 90%;
+	}
+}
+	
+
+.re-btn
+{
+	margin: auto ;
+	a
+	{
+		margin: 25px;
+		padding:
+		{
+			top: 20px;
+			bottom: 20px;
+			left: 30px;
+			right: 30px ;
+		}
+	}
+}
