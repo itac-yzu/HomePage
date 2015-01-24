@@ -60,6 +60,13 @@ section .container .container {
   padding-right: 30px;
 }
 
+footer {
+  text-align: center;
+  font-size: 18px;
+  background-color: rgba(39, 38, 38, 0.8);
+  color: rgba(255, 255, 255, 0.95);
+}
+
 #navigation {
   position: fixed;
   z-index: 10;
