@@ -60,15 +60,45 @@ section {
     }
 }
 
-$fb-bg-c: hsl(180, 50%, 60%);
 footer {
     text-align: center;
-    font:
-    {
-    	size: 18px;
+    font: {
+        size: 18px;
     }
     background: {
         color: hsla(0, 1%, 15%, .8);
     }
     color: hsla(0, 1%, 100%, .95);
+}
+.icon-badge {
+    color: hsla(0, 1%, 15%, .8);
+    width: 55px;
+    height: 55px;
+    padding: 10px;
+    line-height: 50px;
+    font-size: 30px;
+    text-align: center;
+    background-color: #fff;
+    //Instead of the line below you could use @includeborder-top-right-radius($radius)
+    border-top-right-radius: 50%;
+    //Instead of the line below you could use @includeborder-top-left-radius($radius)
+    border-top-left-radius: 50%;
+    //Instead of the line below you could use @includeborder-bottom-right-radius($radius)
+    border-bottom-right-radius: 50%;
+    //Instead of the line below you could use @includeborder-bottom-left-radius($radius)
+    border-bottom-left-radius: 50%;   
+}
+
+.icon-panel
+{
+    a
+    {
+        margin:20px;
+        display:inline-block;
+    }
+    
+}
+
+.icon-facebook:before {
+    content: "\e498";
 }

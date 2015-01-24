@@ -67,6 +67,30 @@ footer {
   color: rgba(255, 255, 255, 0.95);
 }
 
+.icon-badge {
+  color: rgba(39, 38, 38, 0.8);
+  width: 55px;
+  height: 55px;
+  padding: 10px;
+  line-height: 50px;
+  font-size: 30px;
+  text-align: center;
+  background-color: #fff;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.icon-panel a {
+  margin: 20px;
+  display: inline-block;
+}
+
+.icon-facebook:before {
+  content: "\e498";
+}
+
 #navigation {
   position: fixed;
   z-index: 10;
