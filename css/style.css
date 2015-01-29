@@ -78,9 +78,32 @@ footer {
   margin: 20px;
   display: inline-block;
 }
+.icon-panel a:hover {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("icomoon.eot?-z3soeg");
+  src: url("icomoon.eot?#iefix-z3soeg") format("embedded-opentype"), url("icomoon.woff?-z3soeg") format("woff"), url("icomoon.ttf?-z3soeg") format("truetype"), url("icomoon.svg?-z3soeg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 .icon-facebook:before {
-  content: "\e498";
+  content: "\e600";
 }
 
 #navigation {
