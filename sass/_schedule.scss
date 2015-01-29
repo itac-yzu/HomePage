@@ -113,7 +113,7 @@ $color_viking_approx: #5bc0de;
                 }
                 margin-left: -25px;
                 background-color: $color_mountain_mist_approx;
-                z-index: 100;
+                z-index: 1;
                 //Instead of the line below you could use @includeborder-top-right-radius($radius)
                 border-top-right-radius: 50%;
                 //Instead of the line below you could use @includeborder-top-left-radius($radius)

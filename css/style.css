@@ -204,6 +204,9 @@ footer {
     margin-top: 25px;
   }
 }
+#navigation .logo-hide {
+  display: none;
+}
 #navigation ul {
   list-style: none;
 }
@@ -233,6 +236,7 @@ footer {
   }
 }
 #navigation ul li {
+  z-index: 99;
   display: inline;
   font-size: 25px;
 }
@@ -251,6 +255,10 @@ footer {
   background-color: transparent;
   color: rgba(13, 12, 12, 0.9);
   text-decoration: none;
+}
+
+.navigation-short {
+  height: 70px !important;
 }
 
 #recruit {
@@ -382,7 +390,7 @@ footer {
   left: 50%;
   margin-left: -25px;
   background-color: #999999;
-  z-index: 100;
+  z-index: 1;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
