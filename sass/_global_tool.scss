@@ -8,23 +8,8 @@ html, body {
 }
 .main {
     height: 100%;
-    padding-top: 120px;
-    @media screen and (min-width: $device-screen-iphone4) {
-        padding: {
-            top: 140px;
-        }
-    }
+    padding-top: 50px;
     @media screen and (min-width: $device-screen-small) {
-        padding: {
-            top: 160px;
-        }
-    }
-    @media screen and (min-width: $device-screen-medium) {
-        padding: {
-            top: 200px;
-        }
-    }
-    @media screen and (min-width: $device-screen-large) {
         padding: {
             top: 200px;
         }
@@ -50,16 +35,21 @@ section {
 .re-btn {
     margin: auto;
     a {
-        margin: 25px;
-        padding: {
-            top: 20px;
-            bottom: 20px;
-            left: 30px;
-            right: 30px;
+        @media screen and (min-width: $device-screen-iphone4) {
+            margin: 25px;
+            padding: {
+                top: 20px;
+                bottom: 20px;
+                left: 30px;
+                right: 30px;
+            }
+        }
+
+        @media screen and (max-width: $device-screen-iphone4 - 1) {
+            margin-top: 40px;
         }
     }
 }
-
 footer {
     text-align: center;
     font: {
@@ -86,19 +76,14 @@ footer {
     //Instead of the line below you could use @includeborder-bottom-right-radius($radius)
     border-bottom-right-radius: 50%;
     //Instead of the line below you could use @includeborder-bottom-left-radius($radius)
-    border-bottom-left-radius: 50%;   
+    border-bottom-left-radius: 50%;
 }
-
-.icon-panel
-{
-    a
-    {
-        margin:20px;
-        display:inline-block;
+.icon-panel {
+    a {
+        margin: 20px;
+        display: inline-block;
     }
-    
 }
-
 .icon-facebook:before {
     content: "\e498";
 }
