@@ -74,9 +74,10 @@ $color_viking_approx: #5bc0de;
                     content: " ";
                 }
                 text-align: right;
+                
                 @media screen and (max-width: $device-screen-small - 1) {
                     float: left;
-                    left: 15%;
+                    left: 17%;
                     max-width: 80%;
                     &:before {
                         border-left-width: 0px;
@@ -90,6 +91,11 @@ $color_viking_approx: #5bc0de;
                         left: -14px;
                         right: auto;
                     }
+                }
+
+                @media screen and (max-width: $device-screen-iphone-portrait + 1) {
+                	left: 22%;
+                	max-width: 76%;
                 }
             }
             .timeline-badge {
@@ -122,9 +128,16 @@ $color_viking_approx: #5bc0de;
             float: left;
             right: initial;
             left: 55%;
+            
+
             @media screen and (max-width: $device-screen-small - 1) {
-                left: 15%;
+                left: 17%;
             }
+
+            @media screen and (max-width: $device-screen-iphone-portrait) {
+                left: 22%
+            }
+            
             &:before {
                 border-left-width: 0;
                 border-right-width: 15px;

@@ -325,7 +325,7 @@ footer {
 @media screen and (max-width: 767px) {
   .timeline > li > .timeline-panel {
     float: left;
-    left: 15%;
+    left: 17%;
     max-width: 80%;
   }
   .timeline > li > .timeline-panel:before {
@@ -339,6 +339,12 @@ footer {
     border-right-width: 15px;
     left: -14px;
     right: auto;
+  }
+}
+@media screen and (max-width: 321px) {
+  .timeline > li > .timeline-panel {
+    left: 22%;
+    max-width: 76%;
   }
 }
 .timeline > li > .timeline-badge {
@@ -372,7 +378,12 @@ footer {
 }
 @media screen and (max-width: 767px) {
   .timeline > li.timeline-inverted > .timeline-panel {
-    left: 15%;
+    left: 17%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .timeline > li.timeline-inverted > .timeline-panel {
+    left: 22%;
   }
 }
 .timeline > li.timeline-inverted > .timeline-panel:before {
